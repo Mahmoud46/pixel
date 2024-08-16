@@ -33,7 +33,7 @@ document
 // Code
 document.querySelector(".rev_code").addEventListener("click", (_) => {
 	let a = document.createElement("a");
-	a.href = "https://github.com/Mahmoud46/Pixel_computer_Vison_final_project";
+	a.href = "https://github.com/Mahmoud46/Computer-Vision-Final-Project";
 	a.target = "_blank";
 	a.click();
 });
