@@ -19,7 +19,7 @@ document.querySelectorAll(".about_features .features_list li").forEach((fes) =>
 		document
 			.querySelector(`.fes.${fes.getAttribute("feature_window")}`)
 			.classList.add("active");
-	})
+	}),
 );
 
 // Remove features display
@@ -41,8 +41,10 @@ document.querySelector(".rev_code").addEventListener("click", (_) => {
 // Paper
 document.querySelector(".download_paper").addEventListener("click", (_) => {
 	let a = document.createElement("a");
-	a.href = "./static/pdf/Pixel Final Report.pdf";
-	a.download =
-		"Computer Vision Course Project - Report - Application of Computer Vision Tools.pdf";
+	a.href =
+		"https://drive.google.com/file/d/1M0KQKzUH3S5nmkLNpNCoF3H68J5lYySC/view?usp=sharing";
+	// a.download =
+	// 	"Computer Vision Course Project - Report - Application of Computer Vision Tools.pdf";
+	a.target = "_blank";
 	a.click();
 });
